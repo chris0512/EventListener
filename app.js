@@ -2,8 +2,9 @@ function showAlert(){
     alert("hey function");
 }
 
-function secondFunction(){
+function secondFunction(event){
     alert("hey second function");
+    alert(`Coordinate: ${event.clientX} - ${event.clientY}`);
 }
 
 let btn = document.getElementById("myButton");
